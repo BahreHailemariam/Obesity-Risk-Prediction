@@ -241,6 +241,47 @@ explainer = shap.TreeExplainer(model)
 shap_values = explainer.shap_values(X)
 shap.summary_plot(shap_values, X)
 ```
+
+✅ **Automated Refresh:**
+- Set up with Power Automate or Data Gateway
+- Pull new model predictions every Monday
+
+---
+
+## 📈 Example KPI Summary
+
+| KPI | Value | Trend |
+|-----|--------|-------|
+| Total Participants | 5,000 | +8% |
+| Avg BMI | 28.4 | +1.2 |
+| High-Risk % | 42% | -3% |
+| Model Accuracy | 90% | Stable |
+| Top Predictor | Physical Activity | — |
+
+---
+
+## 📊 Business Impact
+- Identify high-risk demographics for early intervention
+- Support healthcare policies using data-driven evidence
+- Provide visual, predictive insights for public health planning
+
+---
+
+## 🧩 Technical Setup
+
+**Data Sources:**
+- `obesity_dataset.csv`  
+- `predictions.csv` from Python pipeline
+
+**Integration Steps:**
+1. Import datasets into Power BI Desktop.  
+2. Apply Power Query transformations for consistency.  
+3. Create DAX measures for KPIs.  
+4. Design pages using Power BI themes (light or dark).  
+5. Publish dashboard to Power BI Service.  
+6. Schedule refresh for automated reporting.
+
+---
 ## 📈 Dashboard Insights
 
 **Power BI / Streamlit Dashboard Includes:**
