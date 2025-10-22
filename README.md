@@ -65,7 +65,17 @@ reporting
     **OneHotEncoder**.\
 -   Convert inconsistent units (e.g., height in meters vs. cm).\
 -   Ensure schema consistency across merged datasets.
+Handle missing values, drop duplicates, and fix data types.
 ```python
+# Handle missing values
+df = df.dropna()
+
+# Convert categorical columns
+categorical_cols = ['Gender', 'family_history_with_overweight', 'CAEC']
+df[categorical_cols] = df[categorical_cols].astype('category')
+
+# Remove duplicates
+df = df.drop_duplicates()
 
 ```
 ### 4️⃣ Feature Engineering
@@ -77,6 +87,7 @@ reporting
         screen_time**
 -   Standardize features with **MinMaxScaler** or **StandardScaler**.\
 -   Perform **correlation analysis** to identify predictive variables.
+Create useful derived features to improve model accuracy.
 ```python
 # BMI calculation
 df['BMI'] = df['Weight'] / (df['Height'] ** 2)
