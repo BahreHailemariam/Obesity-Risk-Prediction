@@ -208,6 +208,23 @@ Calorie_Burn_Ratio = DIVIDE([Avg_Physical_Activity], [Avg_Calories], 0)
 > Random Forest model achieved 90% accuracy, with BMI, calorie intake, and physical activity as top predictors.
 
 ---
+### **Page 5: Recommendations & Action Plan**
+**Purpose:** Translate analytics into actionable insights.
+
+**Visuals:**
+- Matrix: Risk Level × Recommended Action
+- Donut Chart: Intervention Category Distribution
+- Text Box: Strategic Recommendations
+
+**Recommendations Table Example:**
+
+| Risk Level | Recommendation |
+|-------------|----------------|
+| Low | Maintain healthy habits |
+| Medium | Add 30 mins daily exercise |
+| High | Consult physician & nutritionist |
+
+---
 
 ## 📈 Dashboard Insights
 
