@@ -192,6 +192,23 @@ Calorie_Burn_Ratio = DIVIDE([Avg_Physical_Activity], [Avg_Calories], 0)
 > Participants exercising less than 2 hours/day have a 70% probability of being overweight or obese.
 
 ---
+### **Page 4: Machine Learning Results**
+**Purpose:** Visualize prediction outputs from the Python model.
+
+**Visuals:**
+- Confusion Matrix Table (Actual vs. Predicted)
+- Feature Importance Bar Chart
+- Gauge: Model Accuracy (AUC/F1-score)
+
+**Integration Tips:**
+- Import `predictions.csv` with columns: `ID, Actual, Predicted, Risk_Score`
+- Refresh data daily or weekly using Power BI Gateway or Power Automate
+
+**Insight Example:**
+> Random Forest model achieved 90% accuracy, with BMI, calorie intake, and physical activity as top predictors.
+
+---
+
 ## 📈 Dashboard Insights
 
 **Power BI / Streamlit Dashboard Includes:**
