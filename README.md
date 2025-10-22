@@ -42,7 +42,9 @@ reporting
     -   What demographic or lifestyle factors most contribute to obesity
         risk?
     -   How can predictive analytics help reduce healthcare costs?
+```python
 
+```
 ### 2️⃣ Data Extraction & Collection
 
 -   **Sources:** Public health datasets, hospital records (CSV, SQL, or
@@ -51,7 +53,9 @@ reporting
     -   Python (`pandas`, `requests`) for API and CSV ingestion.\
     -   SQL queries to extract structured data from health databases.\
     -   Power Query or Power BI Dataflows for live data connections.
+```python
 
+```
 ### 3️⃣ Data Cleaning & Preprocessing
 
 -   Handle missing values using **mean/median imputation**.\
@@ -61,7 +65,9 @@ reporting
     **OneHotEncoder**.\
 -   Convert inconsistent units (e.g., height in meters vs. cm).\
 -   Ensure schema consistency across merged datasets.
+```python
 
+```
 ### 4️⃣ Feature Engineering
 
 -   Derived features such as:
@@ -71,12 +77,16 @@ reporting
         screen_time**
 -   Standardize features with **MinMaxScaler** or **StandardScaler**.\
 -   Perform **correlation analysis** to identify predictive variables.
+```python
 
+```
 ### 5️⃣ Train/Test Split
 
 -   Split dataset into 70/30 or 80/20 ratios using `train_test_split`.\
 -   Use **stratified sampling** if class imbalance exists.
+```python
 
+```
 ### 6️⃣ Model Training
 
 -   Models used:
@@ -85,7 +95,9 @@ reporting
     -   XGBoost (best-performing)
 -   **Hyperparameter tuning:** GridSearchCV for optimized learning rate,
     depth, and estimators.
+```python
 
+```
 ### 7️⃣ Model Evaluation
 
 -   Metrics:
@@ -93,7 +105,9 @@ reporting
     -   **Precision-Recall Curve** for imbalanced data
     -   **Confusion Matrix** for misclassification insights
     -   **Feature Importance Graphs** for interpretability
+```python
 
+```
 ### 8️⃣ Deployment
 
 -   **Streamlit App:**\
@@ -104,13 +118,34 @@ reporting
     interactively.
 -   **Flask API:**\
     Serve predictions for integration with mobile apps or EMR systems.
+```python
 
+```
 ### 9️⃣ Automation
 
 -   Schedule data refresh and model retraining using:
     -   **Airflow DAGs** (monthly model updates)
     -   **Cron Jobs** for nightly data ingestion and prediction logs\
     -   **Email alerts** for pipeline success/failure
+    # Example: Automate with Python Scheduler
+import schedule, time
+from datetime import datetime
+
+```python
+# Example: Automate with Python Scheduler
+import schedule, time
+from datetime import datetime
+
+def run_pipeline():
+    print(f"Running pipeline at {datetime.now()}")
+    # Call data load, clean, train, predict functions
+
+schedule.every().monday.at("07:00").do(run_pipeline)
+
+while True:
+    schedule.run_pending()
+    time.sleep(60)
+```
 
 ------------------------------------------------------------------------
 
