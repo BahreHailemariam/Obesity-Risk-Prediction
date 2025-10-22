@@ -6,6 +6,7 @@ This project predicts an individual's **risk of obesity** based on
 demographic, dietary, and lifestyle factors using machine learning
 models. It provides healthcare practitioners and researchers with
 insights for prevention and awareness campaigns.
+This repository presents a complete **Machine Learning and Business Intelligence project** designed to predict **obesity risk levels** based on lifestyle, diet, and physical activity data. It integrates **data analysis, model building, and Power BI dashboard visualization** for decision-making in healthcare analytics.
 
 ## 🎯 Business Objective
 
@@ -14,11 +15,7 @@ risk of obesity, allowing targeted wellness and nutrition programs to
 reduce obesity-related diseases.
 
 ------------------------------------------------------------------------
-# 🩺 Obesity Risk Prediction
 
-This repository presents a complete **Machine Learning and Business Intelligence project** designed to predict **obesity risk levels** based on lifestyle, diet, and physical activity data. It integrates **data analysis, model building, and Power BI dashboard visualization** for decision-making in healthcare analytics.
-
----
 
 ## 📊 Project Overview
 
@@ -164,8 +161,6 @@ reporting
                            average           
                            probability       
   ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack
 
