@@ -53,8 +53,15 @@ reporting
     -   Python (`pandas`, `requests`) for API and CSV ingestion.\
     -   SQL queries to extract structured data from health databases.\
     -   Power Query or Power BI Dataflows for live data connections.
+You can load the dataset from a CSV file, database, or API.
 ```python
+import pandas as pd
 
+# Load dataset
+df = pd.read_csv("data/obesity_dataset.csv")
+
+# Preview
+print(df.head())
 ```
 ### 3️⃣ Data Cleaning & Preprocessing
 
