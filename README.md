@@ -42,9 +42,6 @@ reporting
     -   What demographic or lifestyle factors most contribute to obesity
         risk?
     -   How can predictive analytics help reduce healthcare costs?
-```python
-
-```
 ### 2️⃣ Data Extraction & Collection
 
 -   **Sources:** Public health datasets, hospital records (CSV, SQL, or
