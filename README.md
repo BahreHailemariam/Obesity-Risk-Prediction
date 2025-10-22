@@ -126,7 +126,35 @@ reporting
 | **Feature Importance** | Top contributing variables (e.g., calorie intake, activity, age) | Bar chart from model |           
 | **Geographic Distribution (optional)**  | Map of obesity risk scores by region or ZIP code  | Filled map |
 | **Prediction Summary** | Total  predictions, high-risk count, average probability | KPI cards |
-                                                      
+# 📊 Power BI Dashboard Documentation — Obesity Risk Prediction
+
+## 🎯 Objective
+The Power BI dashboard provides a comprehensive view of **obesity risk analysis** and **machine learning predictions**, empowering healthcare professionals and analysts to identify at-risk populations and recommend interventions.
+
+---
+
+## 🧭 Dashboard Structure
+
+### **Page 1: Executive Overview**
+**Purpose:** Show high-level KPIs related to obesity, BMI, and prediction accuracy.
+
+**Visuals:**
+- KPI Cards: Total Participants, Average BMI, Average Obesity Risk, Model Accuracy
+- Trend Line: BMI Change Over Time
+- Donut Chart: Risk Distribution (Low, Medium, High)
+
+**Example DAX:**
+```DAX
+Avg_BMI = AVERAGE(Data[BMI])
+Total_Participants = COUNTROWS(Data)
+Obesity_Risk_Score = AVERAGE(Data[Predicted_Risk_Score])
+Model_Accuracy = 0.90   // Imported from model output
+```
+
+**Insight Example:**
+> The average BMI across participants is 28.4 (Overweight range), with 42% classified as high-risk for obesity.
+
+---                                                    
 ## 📈 Dashboard Insights
 
 **Power BI / Streamlit Dashboard Includes:**
