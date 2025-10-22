@@ -213,18 +213,6 @@ while True:
 
 ------------------------------------------------------------------------
 
-## 📊 Expanded Dashboard Insights
-------------------------------------------------------------------------
-| **Dashboard Section**  | **Description** | **Example Visualization** |
-|------------------------|-----------------|-----------------------------| 
-| **Obesity Risk by Demographics** |Compare risk levels by gender, age, and income group  | Bar chart, stacked column  |
-| **BMI Distribution & Clusters**  | Show BMI patterns  segmented by riskgroup | Histogram, boxplot |                         
-| **Physical Activity vs. Obesity Risk**  | Correlation between exercise hours and predicted risk  | Scatterplot              
-| **Diet Type Analysis** | | Impact of vegetarian,balanced, and fast-food diets on obesity probability  | Pie chart |  
-| **Sleep Hours & Risk Index**  | Relationship between sleep quality and obesity tendency | Line chart |                
-| **Feature Importance** | Top contributing variables (e.g., calorie intake, activity, age) | Bar chart from model |           
-| **Geographic Distribution (optional)**  | Map of obesity risk scores by region or ZIP code  | Filled map |
-| **Prediction Summary** | Total  predictions, high-risk count, average probability | KPI cards |
 # 📊 Power BI Dashboard Documentation — Obesity Risk Prediction
 
 ## 🎯 Objective
@@ -324,6 +312,26 @@ Calorie_Burn_Ratio = DIVIDE([Avg_Physical_Activity], [Avg_Calories], 0)
 | High | Consult physician & nutritionist |
 
 ---
+## 📊 Expanded Dashboard Insights
+------------------------------------------------------------------------
+| **Dashboard Section**                  | **Description** | **Example Visualization** |
+|------------------------|---------------|-----------------------------| 
+| **Obesity Risk by Demographics**       |Compare risk levels by gender, age, and income group  | Bar chart, stacked column  |
+|------------------------|---------------|-----------------------------| 
+| **BMI Distribution & Clusters**        | Show BMI patterns  segmented by riskgroup | Histogram, boxplot | 
+|------------------------|---------------|-----------------------------| 
+| **Physical Activity vs. Obesity Risk** | Correlation between exercise hours and predicted risk  | Scatterplot
+|------------------------|---------------|-----------------------------| 
+| **Diet Type Analysis** |               | Impact of vegetarian,balanced, and fast-food diets on obesity probability | Pie chart |
+|------------------------|---------------|-----------------------------| 
+| **Sleep Hours & Risk Index**           | Relationship between sleep quality and obesity tendency | Line chart | 
+|------------------------|-----------------|-----------------------------| 
+| **Feature Importance**                 |Top contributing variables (e.g., calorie intake, activity, age)| Bar chart from model | 
+|------------------------|-----------------|-----------------------------| 
+| **Geographic Distribution (optional)** | Map of obesity risk scores by region or ZIP code  | Filled map |
+|------------------------|---------------|-----------------------------| 
+| **Prediction Summary**                 | Total  predictions, high-risk count, average probability | KPI cards |
+
 ## 🧠 Advanced Dashboard Features
 
 ✅ **Dynamic Filters:**
