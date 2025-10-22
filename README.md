@@ -85,7 +85,12 @@ reporting
 -   Split dataset into 70/30 or 80/20 ratios using `train_test_split`.\
 -   Use **stratified sampling** if class imbalance exists.
 ```python
+from sklearn.model_selection import train_test_split
 
+X = df.drop('Obesity_Level', axis=1)
+y = df['Obesity_Level']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 ### 6️⃣ Model Training
 
