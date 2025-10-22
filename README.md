@@ -35,9 +35,9 @@ reporting
 ### 1️⃣ Define Business Problem
 
 -   **Goal:** Predict individuals at high risk of obesity to enable
-    early lifestyle intervention.\
+    early lifestyle intervention.
 -   **Stakeholders:** Healthcare providers, fitness companies, insurance
-    firms, and nutrition planners.\
+    firms, and nutrition planners.
 -   **Key Questions:**
     -   What demographic or lifestyle factors most contribute to obesity
         risk?
@@ -45,10 +45,10 @@ reporting
 ### 2️⃣ Data Extraction & Collection
 
 -   **Sources:** Public health datasets, hospital records (CSV, SQL, or
-    API-based sources).\
+    API-based sources).
 -   **Tools Used:**
-    -   Python (`pandas`, `requests`) for API and CSV ingestion.\
-    -   SQL queries to extract structured data from health databases.\
+    -   Python (`pandas`, `requests`) for API and CSV ingestion.
+    -   SQL queries to extract structured data from health databases.
     -   Power Query or Power BI Dataflows for live data connections.
 You can load the dataset from a CSV file, database, or API.
 ```python
@@ -62,12 +62,12 @@ print(df.head())
 ```
 ### 3️⃣ Data Cleaning & Preprocessing
 
--   Handle missing values using **mean/median imputation**.\
+-   Handle missing values using **mean/median imputation**.
 -   Remove or cap outliers in BMI, calorie intake, and physical activity
-    using **IQR method**.\
+    using **IQR method**.
 -   Normalize categorical fields (e.g., diet type, activity level) using
-    **OneHotEncoder**.\
--   Convert inconsistent units (e.g., height in meters vs. cm).\
+    **OneHotEncoder**.
+-   Convert inconsistent units (e.g., height in meters vs. cm).
 -   Ensure schema consistency across merged datasets.
 Handle missing values, drop duplicates, and fix data types.
 ```python
@@ -89,7 +89,7 @@ df = df.drop_duplicates()
     -   **Calorie per activity ratio**
     -   **Lifestyle Index = (sleep_hours × activity_level) /
         screen_time**
--   Standardize features with **MinMaxScaler** or **StandardScaler**.\
+-   Standardize features with **MinMaxScaler** or **StandardScaler**.
 -   Perform **correlation analysis** to identify predictive variables.
 Create useful derived features to improve model accuracy.
 ```python
@@ -104,7 +104,7 @@ df = pd.get_dummies(df, drop_first=True)
 ```
 ### 5️⃣ Train/Test Split
 
--   Split dataset into 70/30 or 80/20 ratios using `train_test_split`.\
+-   Split dataset into 70/30 or 80/20 ratios using `train_test_split`.
 -   Use **stratified sampling** if class imbalance exists.
 ```python
 from sklearn.model_selection import train_test_split
@@ -157,13 +157,13 @@ print(f"AUC Score: {auc:.2f}")
 ```
 ### 8️⃣ Deployment
 
--   **Streamlit App:**\
+-   **Streamlit App:**
     Simple web app where users input age, gender, diet, and lifestyle to
     get a predicted obesity risk score.
--   **Power BI Dashboard:**\
+-   **Power BI Dashboard:**
     Connects model outputs or datasets to visualize trends
     interactively.
--   **Flask API:**\
+-   **Flask API:**
     Serve predictions for integration with mobile apps or EMR systems.
 ```python
 import streamlit as st
@@ -188,7 +188,7 @@ st.subheader(f"Predicted Obesity Category: {prediction[0]}")
 
 -   Schedule data refresh and model retraining using:
     -   **Airflow DAGs** (monthly model updates)
-    -   **Cron Jobs** for nightly data ingestion and prediction logs\
+    -   **Cron Jobs** for nightly data ingestion and prediction logs
     -   **Email alerts** for pipeline success/failure
     # Example: Automate with Python Scheduler
 Automate weekly model runs or data refresh:
