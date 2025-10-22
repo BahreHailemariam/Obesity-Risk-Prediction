@@ -106,7 +106,19 @@ reporting
     -   **Confusion Matrix** for misclassification insights
     -   **Feature Importance Graphs** for interpretability
 ```python
+from sklearn.metrics import confusion_matrix, roc_auc_score
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+# Confusion matrix
+cm = confusion_matrix(y_test, y_pred)
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
+plt.title("Confusion Matrix - Obesity Risk Prediction")
+plt.show()
+
+# AUC score
+auc = roc_auc_score(pd.get_dummies(y_test), pd.get_dummies(y_pred), average='macro')
+print(f"AUC Score: {auc:.2f}")
 ```
 ### 8️⃣ Deployment
 
@@ -119,7 +131,23 @@ reporting
 -   **Flask API:**\
     Serve predictions for integration with mobile apps or EMR systems.
 ```python
+import streamlit as st
+import joblib
 
+model = joblib.load('models/obesity_model.pkl')
+
+st.title("🩺 Obesity Risk Prediction")
+st.write("Enter your details to predict your obesity risk level.")
+
+weight = st.number_input("Weight (kg)")
+height = st.number_input("Height (m)")
+activity = st.slider("Physical Activity Level (0-5)", 0, 5, 2)
+
+bmi = weight / (height ** 2)
+input_data = [[bmi, activity]]
+prediction = model.predict(input_data)
+
+st.subheader(f"Predicted Obesity Category: {prediction[0]}")
 ```
 ### 9️⃣ Automation
 
@@ -128,6 +156,7 @@ reporting
     -   **Cron Jobs** for nightly data ingestion and prediction logs\
     -   **Email alerts** for pipeline success/failure
     # Example: Automate with Python Scheduler
+Automate weekly model runs or data refresh:
 import schedule, time
 from datetime import datetime
 
