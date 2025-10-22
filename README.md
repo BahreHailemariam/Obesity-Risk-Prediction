@@ -154,7 +154,25 @@ Model_Accuracy = 0.90   // Imported from model output
 **Insight Example:**
 > The average BMI across participants is 28.4 (Overweight range), with 42% classified as high-risk for obesity.
 
----                                                    
+---   
+### **Page 2: Demographic Insights**
+**Purpose:** Explore obesity patterns by gender, age, and region.
+
+**Visuals:**
+- Stacked Bar: Obesity Category by Gender
+- Column Chart: BMI by Age Group
+- Map: Geographic Risk Heatmap
+
+**DAX Measures:**
+```DAX
+Obese_Count = CALCULATE(COUNTROWS(Data), Data[Obesity_Level] = "Obese")
+Obesity_Percentage = DIVIDE([Obese_Count], [Total_Participants], 0)
+```
+
+**Insight Example:**
+> Males aged 30–45 show a 35% higher obesity risk than females in the same age range.
+
+---
 ## 📈 Dashboard Insights
 
 **Power BI / Streamlit Dashboard Includes:**
