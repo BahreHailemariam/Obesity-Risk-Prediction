@@ -13,11 +13,25 @@ To enable **early intervention** by identifying individuals at higher
 risk of obesity, allowing targeted wellness and nutrition programs to
 reduce obesity-related diseases.
 
-**Goals:** - Build a robust predictive model - Visualize lifestyle and
+------------------------------------------------------------------------
+# 🩺 Obesity Risk Prediction
+
+This repository presents a complete **Machine Learning and Business Intelligence project** designed to predict **obesity risk levels** based on lifestyle, diet, and physical activity data. It integrates **data analysis, model building, and Power BI dashboard visualization** for decision-making in healthcare analytics.
+
+---
+
+## 📊 Project Overview
+
+Obesity is a major public health issue globally, influenced by factors like eating habits, physical activity, and demographics.  
+This project uses **machine learning models** to predict an individual’s obesity category and identifies key lifestyle patterns contributing to health risk.
+
+**Goal:**  
+Build an end-to-end data pipeline that predicts obesity risk levels, visualizes insights, and automates periodic reporting.
+- Build a robust predictive model - Visualize lifestyle and
 demographic correlations - Automate data collection, model training, and
 reporting
 
-------------------------------------------------------------------------
+---
 
 ## 🧩 Detailed Project Workflow
 
