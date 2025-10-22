@@ -225,7 +225,22 @@ Calorie_Burn_Ratio = DIVIDE([Avg_Physical_Activity], [Avg_Calories], 0)
 | High | Consult physician & nutritionist |
 
 ---
+## 🧠 Advanced Dashboard Features
 
+✅ **Dynamic Filters:**
+- Gender, Age Group, Region, Physical Activity
+
+✅ **Drill-through & Bookmarks:**
+- Drill from Region → Age Group → Patient Profile
+
+✅ **Python Visual Integration:**
+Embed Python visuals for SHAP explainability:
+```python
+import shap
+explainer = shap.TreeExplainer(model)
+shap_values = explainer.shap_values(X)
+shap.summary_plot(shap_values, X)
+```
 ## 📈 Dashboard Insights
 
 **Power BI / Streamlit Dashboard Includes:**
