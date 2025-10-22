@@ -78,7 +78,14 @@ reporting
 -   Standardize features with **MinMaxScaler** or **StandardScaler**.\
 -   Perform **correlation analysis** to identify predictive variables.
 ```python
+# BMI calculation
+df['BMI'] = df['Weight'] / (df['Height'] ** 2)
 
+# Activity Index
+df['Activity_Index'] = df['FAF'] * (1 / (df['TUE'] + 1))
+
+# Encode categorical variables
+df = pd.get_dummies(df, drop_first=True)
 ```
 ### 5️⃣ Train/Test Split
 
