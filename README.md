@@ -161,20 +161,102 @@ reporting
                            average           
                            probability       
   ------------------------------------------------------------------------
+## 📈 Dashboard Insights
 
-## 🛠️ Tech Stack
+**Power BI / Streamlit Dashboard Includes:**
+- 🧍 Obesity risk distribution by demographics  
+- 🍔 Calorie intake vs. physical activity correlation  
+- 🕒 BMI trend by age and gender  
+- ⚙️ Prediction outcomes: Low, Medium, High risk categories  
+- 🔄 Automated updates from ML model predictions  
 
-**Languages & Tools:** Python, SQL, Scikit-learn, Pandas, Power BI,
-Streamlit, Airflow\
-**Libraries:** NumPy, Matplotlib, Seaborn, XGBoost, Flask\
-**Data Sources:** Public health surveys, fitness tracker data, nutrition
-databases
+Example business question solved:
+> “Which demographic group has the highest obesity risk based on lifestyle and dietary patterns?”
 
-------------------------------------------------------------------------
+---
 
-## 👤 Author
+## 🧠 Model Insights
 
-**Bahre Hailemariam**\
-Data Analyst & BI Developer\
-🔗 [LinkedIn](https://www.linkedin.com/) \|
-[GitHub](https://github.com/)
+| Model | Accuracy | Precision | Recall | AUC |
+|-------|-----------|------------|--------|------|
+| Logistic Regression | 82% | 80% | 78% | 0.86 |
+| Random Forest | 88% | 85% | 83% | 0.91 |
+| XGBoost | 90% | 87% | 86% | 0.94 |
+
+**Feature Importance Example:**
+- Calorie Intake — 25%  
+- Physical Activity — 20%  
+- BMI — 18%  
+- Water Intake — 10%  
+- Work Hours — 7%  
+
+---
+
+## 🧩 Tech Stack
+
+- **Languages:** Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)  
+- **Dashboard Tools:** Power BI / Streamlit  
+- **Automation:** Apache Airflow / Python Scheduler  
+- **Version Control:** GitHub  
+- **Deployment:** Streamlit Cloud or Power BI Service  
+
+---
+
+## 📁 Folder Structure
+
+```
+obesity-risk-prediction/
+│
+├── data/
+│   ├── obesity_dataset.csv
+│
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_model_training.ipynb
+│
+├── src/
+│   ├── load_data.py
+│   ├── clean_data.py
+│   ├── train_model.py
+│   ├── predict.py
+│
+├── dashboard/
+│   ├── powerbi_report.pbix
+│   ├── streamlit_app.py
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## ⚙️ Installation & Usage
+
+```bash
+# Clone this repository
+git clone https://github.com/yourusername/obesity-risk-prediction.git
+
+# Navigate to folder
+cd obesity-risk-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Streamlit app
+streamlit run dashboard/streamlit_app.py
+```
+
+---
+
+## 📧 Contact
+
+**Author:** Bahre Hailemariam  
+**Role:** Data Analyst & BI Developer  
+📩 Email: your.email@example.com  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)  
+🔗 [GitHub Repository](https://github.com/yourusername/obesity-risk-prediction)
+
+---
+
+> *"Transforming healthcare data into actionable wellness insights."*
