@@ -95,8 +95,16 @@ reporting
     -   XGBoost (best-performing)
 -   **Hyperparameter tuning:** GridSearchCV for optimized learning rate,
     depth, and estimators.
+Test multiple classifiers and compare results.
 ```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report
 
+model = RandomForestClassifier(n_estimators=200, random_state=42)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+
+print(classification_report(y_test, y_pred))
 ```
 ### 7️⃣ Model Evaluation
 
