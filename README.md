@@ -117,45 +117,45 @@ reporting
 ## 📊 Expanded Dashboard Insights
 
   ------------------------------------------------------------------------
-  **Dashboard Section**    **Description**   **Example Visualization**
+  | **Dashboard Section**    | **Description**  | **Example Visualization**
   ------------------------ ----------------- -----------------------------
-  **Obesity Risk by        Compare risk      Bar chart, stacked column
+ | **Obesity Risk by       | Compare risk      |Bar chart, stacked column
   Demographics**           levels by gender, 
                            age, and income   
                            group             
 
-  **BMI Distribution &     Show BMI patterns Histogram, boxplot
+  |**BMI Distribution &     |Show BMI patterns |Histogram, boxplot
   Clusters**               segmented by risk 
                            group             
 
-  **Physical Activity      Correlation       Scatterplot
+ | **Physical Activity     | Correlation      | Scatterplot
   vs. Obesity Risk**       between exercise  
                            hours and         
                            predicted risk    
 
-  **Diet Type Analysis**   Impact of         Pie chart
+ | **Diet Type Analysis**   |Impact of         |Pie chart
                            vegetarian,       
                            balanced, and     
                            fast-food diets   
                            on obesity        
                            probability       
 
-  **Sleep Hours & Risk     Relationship      Line chart
+  |**Sleep Hours & Risk    | Relationship      |Line chart
   Index**                  between sleep     
                            quality and       
                            obesity tendency  
 
-  **Feature Importance**   Top contributing  Bar chart from model
+  |**Feature Importance**   |Top contributing  |Bar chart from model
                            variables (e.g.,  
                            calorie intake,   
                            activity, age)    
 
-  **Geographic             Map of obesity    Filled map
+ | **Geographic            | Map of obesity    |Filled map
   Distribution             risk scores by    
   (optional)**             region or ZIP     
                            code              
 
-  **Prediction Summary**   Total             KPI cards
+  |**Prediction Summary**  | Total            | KPI cards
                            predictions,      
                            high-risk count,  
                            average           
