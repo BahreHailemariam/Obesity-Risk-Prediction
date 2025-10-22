@@ -173,6 +173,25 @@ Obesity_Percentage = DIVIDE([Obese_Count], [Total_Participants], 0)
 > Males aged 30–45 show a 35% higher obesity risk than females in the same age range.
 
 ---
+### **Page 3: Lifestyle Behavior Analysis**
+**Purpose:** Reveal how lifestyle habits affect obesity.
+
+**Visuals:**
+- Scatter: Calorie Intake vs. Physical Activity
+- Line Chart: Sleep Hours vs. BMI
+- Heatmap: Junk Food Frequency vs. Obesity Level
+
+**DAX Measures:**
+```DAX
+Avg_Calories = AVERAGE(Data[Daily_Calories])
+Avg_Physical_Activity = AVERAGE(Data[Activity_Level])
+Calorie_Burn_Ratio = DIVIDE([Avg_Physical_Activity], [Avg_Calories], 0)
+```
+
+**Insight Example:**
+> Participants exercising less than 2 hours/day have a 70% probability of being overweight or obese.
+
+---
 ## 📈 Dashboard Insights
 
 **Power BI / Streamlit Dashboard Includes:**
