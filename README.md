@@ -481,10 +481,10 @@ streamlit run dashboard/streamlit_app.py
 
 **Author:** Bahre Hailemariam  
 **Role:** Data Analyst & BI Developer  
-📩 Email: your.email@example.com  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)  
-🔗 [GitHub Repository](https://github.com/yourusername/obesity-risk-prediction)
+📩 Email: bahre.hail@gmail.com <br />
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/yourprofile) <br /> 
+🔗 [GitHub Repository](https://github.com/BahreHailemariam/Obesity-Risk-Prediction/)
 
 ---
 
-> *"Transforming healthcare data into actionable wellness insights."*
+> *"Transforming Obesity-Risk data into actionable wellness insights."*
